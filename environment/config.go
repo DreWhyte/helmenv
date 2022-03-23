@@ -11,7 +11,7 @@ import (
 	"github.com/imdario/mergo"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/rs/zerolog/log"
-	"github.com/smartcontractkit/helmenv/chaos"
+	"github.com/Drewhyte/helmenv/chaos"
 	"gopkg.in/yaml.v3"
 	"k8s.io/apimachinery/pkg/util/json"
 )

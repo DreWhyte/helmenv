@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	uuid "github.com/satori/go.uuid"
-	"github.com/smartcontractkit/helmenv/environment"
-	"github.com/smartcontractkit/helmenv/tools"
+	"github.com/Drewhyte/helmenv/environment"
+	"github.com/Drewhyte/helmenv/tools"
 	"github.com/stretchr/testify/require"
 )
 
