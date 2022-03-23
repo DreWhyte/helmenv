@@ -19,6 +19,8 @@ data:
         echo "$TEST_FILE found!"
         if [ -z "$(lsof | grep "$TEST_FILE")" ]
         then
+          file /root/remote.test
+          ls -la /root
           chmod +x /root/remote.test
           /root/remote.test --ginkgo.v --ginkgo.focus {{ .Values.remote_test_runner.test_name }}
           break
@@ -27,10 +29,10 @@ data:
           echo "$TEST_FILE is still being copied, waiting for copy process to finish"
         fi
         echo "Waiting for copy process to finalize"
-        
+
       fi
       ls /root
-      
+
       sleep 10
     done
 
