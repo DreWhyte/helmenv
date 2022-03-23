@@ -1,6 +1,6 @@
 package environment
 
-import "github.com/Drewhyte/helmenv/chaos"
+import "github.com/drewhyte/helmenv/chaos"
 
 // ClearAllChaosStandaloneExperiments remove all chaos experiments from a standalone env
 func (k *Environment) ClearAllChaosStandaloneExperiments(expInfos map[string]*chaos.ExperimentInfo) error {

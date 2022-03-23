@@ -6,9 +6,9 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/Drewhyte/helmenv/chaos/experiments"
-	"github.com/Drewhyte/helmenv/environment"
-	"github.com/Drewhyte/helmenv/tools"
+	"github.com/drewhyte/helmenv/chaos/experiments"
+	"github.com/drewhyte/helmenv/environment"
+	"github.com/drewhyte/helmenv/tools"
 )
 
 func init() {

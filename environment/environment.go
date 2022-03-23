@@ -15,7 +15,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 
 	"github.com/pkg/errors"
-	"github.com/Drewhyte/helmenv/chaos"
+	"github.com/drewhyte/helmenv/chaos"
 	"golang.org/x/sync/errgroup"
 	"helm.sh/helm/v3/pkg/cli"
 	v1 "k8s.io/api/core/v1"
