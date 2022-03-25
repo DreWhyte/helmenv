@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/drewhyte/helmenv/environment"
+	"github.com/drewhyte/helmenv/tools"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	uuid "github.com/satori/go.uuid"
-	"github.com/drewhyte/helmenv/environment"
-	"github.com/drewhyte/helmenv/tools"
 	"github.com/stretchr/testify/require"
 )
 
