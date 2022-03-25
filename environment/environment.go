@@ -173,13 +173,13 @@ func DeployLongTestEnvironment(
 	// Copy config and executable files to pod
 	//kubectl cp remote.test chainlink-soak-lzxqb/remote-test-runner:/root
 
-	compileCmd := exec.Command("kubectl", "cp", "framework.yaml", fmt.Sprintf("%s/%s:/root",remoteChart.namespaceName,"remote-test-runner"))
-
-	compileOut, err := compileCmd.Output()
-	log.Debug().
-		Str("Output", string(compileOut)).
-		Str("Command", compileCmd.String()).
-		Msg("Ran command")
+	//compileCmd := exec.Command("kubectl", "cp", "framework.yaml", fmt.Sprintf("%s/%s:/root",remoteChart.namespaceName,"remote-test-runner"))
+	//
+	//compileOut, err := compileCmd.Output()
+	//log.Debug().
+	//	Str("Output", string(compileOut)).
+	//	Str("Command", compileCmd.String()).
+	//	Msg("Ran command")
 
 	//remoteChart.namespaceName
 	_, _, errOut, err := remoteChart.CopyToPod(frameworkConfigPath, "/root/framework.yaml", "remote-test-runner")
